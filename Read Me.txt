@@ -1,0 +1,12 @@
+Hello,
+
+Welcome to my Nanodegree first project "Movie Discovery"
+
+*Note
+To add your API_KEY, insert it in line 80 at the end of the line that states 'API_KEY' inside MainActivity.java.
+
+Overview of the project:
+The Movie Discovery application will display a gridview of images once the application is launched.
+As a user, you are allow to click on movie posters and view the details of the movies such as title, rating, release date, image_path, and
+movie overview.
+In the main menu, there is a menu section on the top right corner of the application where users can refresh to the most popular movie. 

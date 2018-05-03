@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scrollView">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorTeal"
+            android:ellipsize="none"
+            android:gravity="start"
+            android:padding="@dimen/title_padding"
+            android:textColor="@color/colorWhite"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/vote_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/lightBlack"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/overview_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintStart_toEndOf="@+id/image_thumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/release_date"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/lightBlack"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toEndOf="@+id/image_thumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+        <ImageView
+            android:id="@+id/image_thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+
+        <TextView
+            android:id="@+id/overview_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:padding="@dimen/overview_padding"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_thumbnail" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/overview_text" />
+
+        <TextView
+            android:id="@+id/trailer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="272dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/trailers_name"
+            android:textColor="@color/lightBlack"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <Button
+            android:id="@+id/checkmark_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorTeal"
+            android:gravity="center"
+            android:padding="@dimen/mark_favorite_padding"
+            android:text="@string/mark_favorite"
+            android:textColor="@color/lightBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toEndOf="@+id/image_thumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/remove_favorites" />
+
+        <Button
+            android:id="@+id/remove_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorTeal"
+            android:gravity="center"
+            android:padding="@dimen/mark_favorite_padding"
+            android:text="@string/remove_movie_reviews"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.228"
+            app:layout_constraintStart_toEndOf="@+id/image_thumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/vote_average" />
+
+
+        <TextView
+            android:id="@+id/movie_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:padding="@dimen/mark_favorite_padding"
+            android:text="@string/movie_reviews"
+            android:textColor="@color/lightBlack"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lv_nonscroll_list" />
+
+        <com.example.kh870h.moviediscovery.MovieTrailersDisplay.NonScrollListView
+            android:id="@+id/lv_nonscroll_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:padding="@dimen/list_view_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trailer_title" />
+
+        <ListView
+            android:id="@+id/reviews_nonscroll_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:padding="@dimen/overview_padding"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movie_reviews"></ListView>
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

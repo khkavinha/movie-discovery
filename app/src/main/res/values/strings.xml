@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MovieDiscovery</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="favorite_movies">Favorite Movies</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="movies_rating">Movie Rating: </string>
+    <string name="release_date">Release Date: </string>
+    <string name="title_activity_movie_trailers">MovieTrailers</string>
+    <string name="trailers_name">Trailers:</string>
+    <string name="trailers_titles">Trailers %1$d</string>
+    <string name="mark_favorite">MARK AS FAVORITE</string>
+    <string name="movies_overall_rating">%1$s/10</string>
+    <string name="saved_movie">SAVED</string>
+    <string name="notsaved_movie">NOT SAVED</string>
+    <string name="movie_reviews">Read all Reviews:</string>
+    <string name="remove_movie_reviews">MARK AS NOT FAVORITE</string>
+
+</resources>
